@@ -12,3 +12,7 @@ Publish the version 0.0.1-dev.2
 
 Fix some typos in the logger_test.go, example_test.go, README.md file
 Publish the version 0.0.1-dev.3
+
+- 0.0.1-dev.4
+
+Fix some typos and code-style typos in the logger.go file
