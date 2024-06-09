@@ -1,3 +1,4 @@
 - 0.0.1-dev.1
 
 Complete the entire project
+Publish the version 0.0.1-dev.1
