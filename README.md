@@ -11,7 +11,7 @@ Btw it used to be in [pkg/logger](https://github.com/uynilo9/bento/tree/main/pkg
 1. Install the module from GitHub url:
 
 ```sh
-go get github.com/uynilo9/logger.go@latest
+go get github.com/uynilo9/logger.go
 ```
 
 2. Import the module in your Go code:
@@ -268,7 +268,7 @@ if err != nil {
 
 ## 🔖 Version
 
-0.0.1-dev.1
+0.0.1-dev.2
 
 ## 📜 License
 

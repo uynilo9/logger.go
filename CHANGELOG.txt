@@ -2,3 +2,7 @@
 
 Complete the entire project
 Publish the version 0.0.1-dev.1
+
+- 0.0.1-dev.2
+
+Fix several output messages in the example_test.go file, modify the installation in the README.md file
