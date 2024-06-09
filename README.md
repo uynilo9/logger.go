@@ -2,7 +2,7 @@
 
 ## ✨ Intro
 
-A simple logger written in Go, which is used to print errors, tips, etc. messages, was born while I was working on another project [github.com/uynilo9/bento](https://github.com/uynilo9/bento) of mine
+A simple logger written in Go, which is used to print errors, tips, etc. messages, was born while I was working on another project [github.com/uynilo9/bento](https://github.com/uynilo9/bento).
 
 Btw it used to be in [pkg/logger](https://github.com/uynilo9/bento/tree/main/pkg/logger) under [github.com/uynilo9/bento](https://github.com/uynilo9/bento) originally. So far it still exists there but will no longer get updates there (if it's supposed to get any here lol).
 
@@ -187,7 +187,7 @@ if err != nil {
 ##### (a) Argument(s):
 
 - `format` (`string`): The format string for the detailed message. It follows the same syntax as `fmt.Printf`, allowing for formatted printing.
-- `a` (`...anyThe values to be formatted and printed according to the format string.type.
+- `a` (`...any`): The values to be formatted and printed according to the format string.type.
 
 ##### (b) Return:
 
@@ -268,7 +268,7 @@ if err != nil {
 
 ## 🔖 Version
 
-0.0.1-dev.2
+0.0.1-dev.3
 
 ## 📜 License
 

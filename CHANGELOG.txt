@@ -7,3 +7,7 @@ Publish the version 0.0.1-dev.1
 
 Fix several output messages in the example_test.go file, modify the installation in the README.md file
 Publish the version 0.0.1-dev.2
+
+- 0.0.1-dev.3
+
+Fix some typos in the logger_test.go, example_test.go, README.md file
