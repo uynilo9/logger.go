@@ -33,7 +33,8 @@ func Tip(a ...any) (int, error) {
 
 func Detailln(a ...any) (int, error) {
 	a = append([]any{color.Gray + "DETAIL" + color.Reset + "\n"}, a...)
-	n, err := fmt.Println(a...)
+	a = append(a, "\n")
+	n, err := fmt.Print(a...)
 	return n, err
 }
 

@@ -33,20 +33,19 @@ func ExampleDetailln() {
 
 func ExampleErrorln() {
 	logger.Errorln("Unexpected character on line ", line, " column ", column)
-	// Output: ERROR Unexpected character on line 10 column 5
+	// Output: ERROR Unexpected character on line  10  column  5
 	// // newline
 }
 
 func ExampleFatalln() {
 	logger.Fatalln("The required data '", foo, "' was missing")
-	// Output: FATAL The required data 'foo' was missing
-	// // newline
-	// // exit
+	// Output: The required data ' foo ' was missing
+	// // newline // exit
 }
 
 func ExampleTipln() {
 	logger.Tipln("To get more info, visit ", url, "#", id)
-	// Output: TIP To get more info, visit https://github.com/uynilo9/logger.go#213
+	// Output: TIP To get more info, visit  https://uynilo9.is-a.dev # 213
 	// // newline
 }
 
@@ -69,5 +68,5 @@ func ExampleFatalf() {
 
 func ExampleTipf() {
 	logger.Tipf("To get more info, visit %s#%d", url, id)
-	// Output: TIP To get more info, visit https://github.com/uynilo9/logger.go#213
+	// Output: TIP To get more info, visit https://uynilo9.is-a.dev#213
 }
