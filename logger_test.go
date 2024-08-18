@@ -7,13 +7,14 @@ import (
 )
 
 const (
-	time = 10.5
-	code = 213
-	line = 10
-	column = 5
-	foo = "foo"
-	url = "https://uynilo9.is-a.dev"
-	id = 213
+	time    = 10.5
+	code    = 213
+	line    = 10
+	column  = 5
+	foo     = "foo"
+	url     = "https://uynilo9.is-a.dev"
+	id      = 213
+	version = "3.14.159"
 )
 
 func TestDetail(*testing.T) {
@@ -32,6 +33,10 @@ func TestTip(*testing.T) {
 	logger.Tip("To get more info, visit ", url, "#", id)
 }
 
+func TestWarn(*testing.T) {
+	logger.Warn("New version ", version, " has been released, please update")
+}
+
 func TestDetailln(*testing.T) {
 	logger.Detailln("- Time: ", time, " - Code: ", code)
 }
@@ -48,6 +53,10 @@ func TestTipln(*testing.T) {
 	logger.Tipln("To get more info, visit ", url, "#", id)
 }
 
+func TestWarnln(*testing.T) {
+	logger.Warnln("New version ", version, " has been released, please update")
+}
+
 func TestDetailf(*testing.T) {
 	logger.Detailf("- Time: %g - Code: %d", time, code)
 }
@@ -62,4 +71,8 @@ func TestFatalf(*testing.T) {
 
 func TestTipf(*testing.T) {
 	logger.Tipf("To get more info, visit %s#%d", url, id)
+}
+
+func TestWarnf(*testing.T) {
+	logger.Warnf("New version %s has been released, please update", version)
 }

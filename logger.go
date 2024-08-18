@@ -31,6 +31,12 @@ func Tip(a ...any) (int, error) {
 	return n, err
 }
 
+func Warn(a ...any) (int, error) {
+	a = append([]any{color.Yellow + "WARN" + color.Reset + " "}, a...)
+	n, err := fmt.Print(a...)
+	return n, err
+}
+
 func Detailln(a ...any) (int, error) {
 	a = append([]any{color.Gray + "DETAIL" + color.Reset + "\n"}, a...)
 	a = append(a, "\n")
@@ -56,6 +62,12 @@ func Tipln(a ...any) (int, error) {
 	return n, err
 }
 
+func Warnln(a ...any) (int, error) {
+	a = append([]any{color.Yellow + "WARN" + color.Reset}, a...)
+	n, err := fmt.Println(a...)
+	return n, err
+}
+
 func Detailf(format string, a ...any) (int, error) {
 	n, err := fmt.Printf(color.Gray + "DETAIL" + color.Reset + "\n" + format, a...)
 	return n, err
@@ -73,5 +85,10 @@ func Fatalf(format string, a ...any) {
 
 func Tipf(format string, a ...any) (int, error) {
 	n, err := fmt.Printf(color.Blue + "TIP" + color.Reset + " " + format, a...)
+	return n, err
+}
+
+func Warnf(format string, a ...any) (int, error) {
+	n, err := fmt.Printf(color.Yellow + "WARN" + color.Reset + " " + format, a...)
 	return n, err
 }

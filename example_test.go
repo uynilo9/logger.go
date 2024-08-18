@@ -24,6 +24,11 @@ func ExampleTip() {
 	// Output: TIP To get more info, visit https://uynilo9.is-a.dev#213
 }
 
+func ExampleWarn() {
+	logger.Warn("New version ", version, " has been released, please update")
+	// Output: WARN New version 3.14.159 has been released, please update
+}
+
 func ExampleDetailln() {
 	logger.Detailln("- Time: ", time, " - Code: ", code)
 	// Output: DETAIL
@@ -49,6 +54,12 @@ func ExampleTipln() {
 	// // newline
 }
 
+func ExampleWarnln() {
+	logger.Warnln("New version ", version, " has been released, please update")
+	// Output: WARN New version 3.14.159 has been released, please update
+	// // newline
+}
+
 func ExampleDetailf() {
 	logger.Detailf("- Time: %g - Code: %d", time, code)
 	// Output: DETAIL
@@ -69,4 +80,9 @@ func ExampleFatalf() {
 func ExampleTipf() {
 	logger.Tipf("To get more info, visit %s#%d", url, id)
 	// Output: TIP To get more info, visit https://uynilo9.is-a.dev#213
+}
+
+func ExampleWarnf() {
+	logger.Warnf("New version %s has been released, please update", version)
+	// Output: WARN New version 3.14.159 has been released, please update
 }

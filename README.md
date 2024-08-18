@@ -102,7 +102,28 @@ if err != nil {
     // ...
 ```
 
-#### 5. `logger.Detailln(a ...any)`
+#### 5. `logger.Warn(a ...any)`
+
+##### (a) Argument(s):
+
+- `a` (`...any`): The warning message(s) to be printed. You can pass any number of arguments of any type.
+
+##### (b) Return:
+
+- `n` (`int`): The number of bytes written.
+- `err` (`error`): Any write error encountered.
+
+##### (c) Example:
+
+```go
+logger.Warn("New version ", version, " has been released, please update")
+
+_, err := logger.Warn("New version ", version, " has been released, please update")
+if err != nil {
+    // ...
+```
+
+#### 6. `logger.Detailln(a ...any)`
 
 ##### (a) Argument(s):
 
@@ -123,7 +144,7 @@ if err != nil {
     // ...
 ```
 
-#### 6. `logger.Errorln(a ...any)`
+#### 7. `logger.Errorln(a ...any)`
 
 ##### (a) Argument(s):
 
@@ -144,7 +165,7 @@ if err != nil {
     // ...
 ```
 
-#### 7. `logger.Fatalln(a ...any)`
+#### 8. `logger.Fatalln(a ...any)`
 
 ##### (a) Argument(s):
 
@@ -161,7 +182,7 @@ if err != nil {
 logger.Fatalln("The required data \'", data, "\' was missing")
 ```
 
-#### 8. `logger.Tipln(a ...any)`
+#### 9. `logger.Tipln(a ...any)`
 
 ##### (a) Argument(s):
 
@@ -182,7 +203,28 @@ if err != nil {
     // ...
 ```
 
-#### 9. `logger.Detailf(format string, a ...any)`
+#### 10. `logger.Warnln(a ...any)`
+
+##### (a) Argument(s):
+
+- `a` (`...any`): The warning message(s) to be printed. You can pass any number of arguments of any type.
+
+##### (b) Return:
+
+- `n` (`int`): The number of bytes written.
+- `err` (`error`): Any write error encountered.
+
+##### (c) Example:
+
+```go
+logger.Warnln("New version ", version, " has been released, please update")
+
+_, err := logger.Warnln("New version ", version, " has been released, please update")
+if err != nil {
+    // ...
+```
+
+#### 11. `logger.Detailf(format string, a ...any)`
 
 ##### (a) Argument(s):
 
@@ -204,7 +246,7 @@ if err != nil {
     // ...
 ```
 
-#### 10. `logger.Errorf(format string, a ...any)`
+#### 12. `logger.Errorf(format string, a ...any)`
 
 ##### (a) Argument(s):
 
@@ -226,7 +268,7 @@ if err != nil {
     // ...
 ```
 
-#### 11. `logger.Fatalf(format string, a ...any)`
+#### 13. `logger.Fatalf(format string, a ...any)`
 
 ##### (a) Argument(s):
 
@@ -244,7 +286,7 @@ if err != nil {
 logger.Fatalf("The required data \'%s\' was missing", data)
 ```
 
-#### 12. `logger.Tipf(format string, a ...any)`
+#### 14. `logger.Tipf(format string, a ...any)`
 
 ##### (a) Argument(s):
 
@@ -266,9 +308,31 @@ if err != nil {
     // ...
 ```
 
+#### 15. `logger.Warnf(format string, a ...any)`
+
+##### (a) Argument(s):
+
+- `format` (`string`): The format string for the warning message. It follows the same syntax as `fmt.Printf`, allowing for formatted printing.
+- `a` (`...any`): The values to be formatted and printed according to the format string.
+
+##### (b) Return:
+
+- `n` (`int`): The number of bytes written.
+- `err` (`error`): Any write error encountered.
+
+##### (c) Example:
+
+```go
+logger.Warnf("New version %s has been released, please update", version)
+
+_, err := logger.Warnf("New version %s has been released, please update", version)
+if err != nil {
+    // ...
+```
+
 ## 🔖 Version
 
-0.0.1-dev.5
+0.0.1-dev.6
 
 ## 📜 License
 
