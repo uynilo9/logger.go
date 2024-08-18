@@ -26,3 +26,4 @@ Publish the version 0.0.1-dev.5
 - 0.0.1-dev.6
 
 Add three new functions for warning messages
+Publish the version 0.0.1-dev.6
